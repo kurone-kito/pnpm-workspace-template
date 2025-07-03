@@ -1,16 +1,9 @@
-# 📄 PNPM project template
+# 📄 PNPM workspaces project template
 
 ## Features
 
-- PNPM
-- TypeScript
-- Biome
-- Commitlint with Husky
-- Visual Studio Code / Vim ready
-- CI configurations
-  - CodeRabbit
-  - Dependabot
-  - GitHub Actions
+- All features of
+  [kurone-kito/pnpm-project-template](https://github.com/kurone-kito/pnpm-project-template)
 
 ## How to use this template
 
@@ -18,7 +11,7 @@ You can create a new project by using `degit` or the “Use this template”
 button on GitHub.
 
 ```sh
-npx degit kurone-kito/pnpm-project-template my-project
+npx degit kurone-kito/pnpm-workspace-template my-project
 cd my-project
 pnpm install
 ```
@@ -37,8 +30,8 @@ pnpm install
 
 ### Usecase
 
-When you want to create a monorepo project, you should use the
-[pnpm-workspace-template](https://github.com/kurone-kito/pnpm-workspace-template).
+When you want to create a non-monorepo project, you should use the
+[pnpm-project-template](https://github.com/kurone-kito/pnpm-project-template).
 
 ## System Requirements
 
