@@ -1,1 +1,8 @@
-{ "files": [], "references": [] }
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/cli" },
+    { "path": "./packages/lib" },
+    { "path": "./packages/web-solid" }
+  ]
+}

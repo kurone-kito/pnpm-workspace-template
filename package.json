@@ -16,9 +16,11 @@
   },
   "scripts": {
     "build": "pnpm --aggregate-output --if-present --workspace-concurrency=0 -r run build",
+    "build:min": "pnpm --filter \"@kurone-kito/pwt-lib\" run build",
     "clean": "pnpm run --no-bail \"/^clean:.+/\"",
     "clean:root": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" node_modules/.cache",
     "clean:sub": "pnpm --aggregate-output --if-present --parallel --workspace-concurrency=0 -r run clean",
+    "cli": "pwt-cli",
     "dev": "pnpm --if-present --parallel --stream --workspace-concurrency=Infinity -r run dev",
     "lint": "pnpm run \"/lint:.+:check/\"",
     "lint:biome:check": "biome check",
@@ -27,8 +29,11 @@
     "lint:fix": "pnpm run \"/lint:.+:fix/\"",
     "lint:markdown:check": "markdownlint-cli2 \"**/*.md\"",
     "lint:markdown:fix": "markdownlint-cli2 --fix \"**/*.md\"",
+    "pnpm:devPreinstall": "pnpm run -r devPreinstall",
     "postlint:fix": "pnpm run lint:cspell:check",
     "prepare": "husky",
+    "predev": "pnpm run build:min",
+    "pretest": "pnpm run build:min",
     "publish": "pnpm -r publish --no-git-checks",
     "publish:next": "pnpm -r publish --tag next --no-git-checks",
     "test": "pnpm --aggregate-output --if-present --workspace-concurrency=0 -r run test"

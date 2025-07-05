@@ -63,21 +63,33 @@ importers:
         specifier: workspace:^
         version: link:../lib
     devDependencies:
+      '@kurone-kito/typescript-config':
+        specifier: ^0.20.0
+        version: 0.20.0(typescript@5.8.3)
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
+      typescript:
+        specifier: ~5.8.3
+        version: 5.8.3
 
   packages/lib:
     devDependencies:
+      '@kurone-kito/typescript-config':
+        specifier: ^0.20.0
+        version: 0.20.0(typescript@5.8.3)
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
+      typescript:
+        specifier: ~5.8.3
+        version: 5.8.3
 
   packages/web-solid:
     dependencies:
@@ -85,12 +97,18 @@ importers:
         specifier: workspace:^
         version: link:../lib
     devDependencies:
+      '@kurone-kito/typescript-config':
+        specifier: ^0.20.0
+        version: 0.20.0(typescript@5.8.3)
       cpy-cli:
         specifier: ^5.0.0
         version: 5.0.0
       rimraf:
         specifier: ^6.0.1
         version: 6.0.1
+      typescript:
+        specifier: ~5.8.3
+        version: 5.8.3
 
 packages:
 
@@ -497,6 +515,15 @@ packages:
   '@kurone-kito/markdownlint-config@0.20.0':
     resolution: {integrity: sha512-mc4qG/9Mh//Se/b98Lqrl3Wwb6mpqlS/ya0QE4wJe9rbpebeBA0vgo7bHG3sd1cB12uDHydS03/sAkbAHf/vFg==}
     engines: {node: ^20.11 || ^22 || >=24}
+
+  '@kurone-kito/typescript-config@0.20.0':
+    resolution: {integrity: sha512-i36Ch1P8FntbzOTZTJQ3IGGIjokcqm3TwwFIYnJMxRuH+iD5IJWoNG46xFOsMlQyc8IOmWTqN+rXbF1l93MZiQ==}
+    engines: {node: ^20.11 || ^22 || >=24}
+    peerDependencies:
+      typescript: '>=5.7.x'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1901,6 +1928,10 @@ snapshots:
       lint-staged: 16.1.2
 
   '@kurone-kito/markdownlint-config@0.20.0': {}
+
+  '@kurone-kito/typescript-config@0.20.0(typescript@5.8.3)':
+    optionalDependencies:
+      typescript: 5.8.3
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
