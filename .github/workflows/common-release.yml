@@ -10,7 +10,7 @@ on:
       NPM_TOKEN:
         required: true
 permissions:
-  contents: read
+  contents: write
   packages: write
 jobs:
   build-and-deploy-to-npmjs:
@@ -96,3 +96,36 @@ jobs:
       - if: ${{ inputs.next }}
         name: Publish the packages as the alpha version
         run: pnpm run publish:next --no-git-check
+  build-and-deploy-to-release:
+    if: ${{ github.event_name == 'release' }}
+    name: Build and deploy some assets to the release
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Stages the pushed branch
+        uses: actions/checkout@v4
+      - name: Pre-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+      - name: Enable the corepack
+        run: corepack enable
+      - name: Post-prepare the Node.js environment
+        uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version-file: .node-version
+      - env:
+          HUSKY: 0
+        name: Install the dependencies
+        run: pnpm install --frozen-lockfile --prefer-offline
+      - name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
+        run: pnpm run build
+      - name: pack the packages
+        run: pnpm --filter "!*builder-config" -r pack
+      - name: Uploading assets to the release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: '*.tgz'
