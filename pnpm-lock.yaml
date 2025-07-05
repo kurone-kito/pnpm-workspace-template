@@ -62,14 +62,26 @@ importers:
       '@kurone-kito/pwt-lib':
         specifier: workspace:^
         version: link:../lib
+    devDependencies:
+      rimraf:
+        specifier: ^6.0.1
+        version: 6.0.1
 
-  packages/lib: {}
+  packages/lib:
+    devDependencies:
+      rimraf:
+        specifier: ^6.0.1
+        version: 6.0.1
 
   packages/web-solid:
     dependencies:
       '@kurone-kito/pwt-lib':
         specifier: workspace:^
         version: link:../lib
+    devDependencies:
+      rimraf:
+        specifier: ^6.0.1
+        version: 6.0.1
 
 packages:
 
