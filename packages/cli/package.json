@@ -1,0 +1,27 @@
+{
+  "name": "@kurone-kito/pwt-cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The CLI app boilerplate",
+  "keywords": ["cli", "command-line", "boilerplate", "template"],
+  "homepage": "https://github.com/kurone-kito/pnpm-workspace-template#readme",
+  "bugs": "https://github.com/kurone-kito/pnpm-workspace-template/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurone-kito/pnpm-workspace-template.git",
+    "directory": "packages/cli"
+  },
+  "license": "MIT",
+  "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
+  "type": "module",
+  "files": [],
+  "dependencies": {
+    "@kurone-kito/pwt-lib": "workspace:^"
+  },
+  "engines": {
+    "node": "^20.11 || ^22 || >=24"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

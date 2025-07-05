@@ -1,0 +1,24 @@
+{
+  "name": "@kurone-kito/pwt-lib",
+  "version": "0.1.0",
+  "private": true,
+  "description": "The boilerplate of the Node.js library",
+  "keywords": ["library", "boilerplate", "template"],
+  "homepage": "https://github.com/kurone-kito/pnpm-workspace-template#readme",
+  "bugs": "https://github.com/kurone-kito/pnpm-workspace-template/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kurone-kito/pnpm-workspace-template.git",
+    "directory": "packages/lib"
+  },
+  "license": "MIT",
+  "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
+  "type": "module",
+  "files": [],
+  "engines": {
+    "node": "^20.11 || ^22 || >=24"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -35,6 +35,9 @@ importers:
       '@kurone-kito/markdownlint-config':
         specifier: ^0.20.0
         version: 0.20.0
+      '@kurone-kito/pwt-cli':
+        specifier: workspace:^
+        version: link:packages/cli
       cspell:
         specifier: ^9.1.3
         version: 9.1.3
@@ -53,6 +56,20 @@ importers:
       typescript:
         specifier: ~5.8.3
         version: 5.8.3
+
+  packages/cli:
+    dependencies:
+      '@kurone-kito/pwt-lib':
+        specifier: workspace:^
+        version: link:../lib
+
+  packages/lib: {}
+
+  packages/web-solid:
+    dependencies:
+      '@kurone-kito/pwt-lib':
+        specifier: workspace:^
+        version: link:../lib
 
 packages:
 

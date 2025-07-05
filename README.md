@@ -6,6 +6,12 @@
   [kurone-kito/pnpm-project-template](https://github.com/kurone-kito/pnpm-project-template)
 - The workspaces support with [pnpm workspaces](https://pnpm.io/workspaces)
 
+### Workspaces
+
+- `cli`: The boilerplate of the CLI applications
+- `lib`: The boilerplate of the libraries
+- `web-solid`: The boilerplate of the web applications using Solid.js
+
 ## How to use this template
 
 You can create a new project by using `degit` or the “Use this template”
