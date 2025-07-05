@@ -3,6 +3,7 @@
 ## Features
 
 - [TypeScript](https://www.typescriptlang.org)
+- [Vitest](https://vitest.dev)
 
 ## LICENSE
 
