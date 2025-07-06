@@ -3,6 +3,7 @@
 ## Features
 
 - [TypeScript](https://www.typescriptlang.org)
+- [Vite](https://vite.dev)
 - [Vitest](https://vitest.dev)
 
 ## Usage
