@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@kurone-kito/pwt-lib": "workspace:^",
+    "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.3",
     "@solidjs/start": "^1.1.6",
     "solid-js": "^1.9.7"
@@ -49,6 +50,7 @@
     "rimraf": "^6.0.1",
     "tailwindcss": "^4.1.11",
     "tailwindcss-safe-area": "^0.6.0",
+    "type-fest": "^4.41.0",
     "typescript": "~5.8.3",
     "vinxi": "^0.5.8",
     "vite-plugin-solid": "^2.11.7",
