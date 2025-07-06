@@ -1,16 +1,17 @@
-import helloWorld from '@kurone-kito/pwt-lib';
+import { Router } from '@solidjs/router';
+import { FileRoutes } from '@solidjs/start/router';
 import type { Component } from 'solid-js';
 import './app.css';
+import { DefaultTemplate } from './components/templates/DefaultTemplate';
 
 /**
  * The main application component.
  * @returns The component.
  */
 const App: Component = () => (
-  <article class="flex gap-2 items-center">
-    <i class="vrc-icon-Document" />
-    <h1>{helloWorld}</h1>
-  </article>
+  <Router base={import.meta.env.SERVER_BASE_URL} root={DefaultTemplate}>
+    <FileRoutes />
+  </Router>
 );
 
 export default App;
