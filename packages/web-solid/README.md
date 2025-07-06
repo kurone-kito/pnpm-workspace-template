@@ -7,6 +7,7 @@
 - [SolidStart](https://start.solidjs.com)
 - [Testing Library](https://testing-library.com)
 - [TypeScript](https://www.typescriptlang.org)
+- [VRC Icons](https://kurone-kito.github.io/launchpad-icons/)
 
 ## LICENSE
 

@@ -6,6 +6,11 @@ import './app.css';
  * The main application component.
  * @returns The component.
  */
-const App: Component = () => <h1>{helloWorld}</h1>;
+const App: Component = () => (
+  <article class="flex gap-2 items-center">
+    <i class="vrc-icon-Document" />
+    <h1>{helloWorld}</h1>
+  </article>
+);
 
 export default App;
