@@ -262,6 +262,10 @@ $RECYCLE.BIN/
 # pnpm
 pnpm-lock.yaml.*
 
+# Vinxi
+.output/
+.vinxi/
+
 # Vite / Vitest
 v8-compile-cache-*
 *.config.timestamp_*

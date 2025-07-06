@@ -2,9 +2,8 @@
 
 ## Features
 
+- [SolidStart](https://start.solidjs.com)
 - [TypeScript](https://www.typescriptlang.org)
-- [Vite](https://vite.dev)
-- [Vitest](https://vitest.dev)
 
 ## LICENSE
 

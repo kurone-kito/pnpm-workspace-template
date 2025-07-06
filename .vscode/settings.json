@@ -3,8 +3,11 @@
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
     "*.d.mts": "${capture}.mjs, ${capture}.mjs.*, ${capture}.d.mts.*",
+    "*.js": "${capture}.js.*",
     "*.md": "${capture}.*.md",
-    "*.mts": "${capture}.spec.mts",
+    "*.mjs": "${capture}.mjs.*",
+    "*.mts": "${capture}.*.mts, ${capture}.*.tsx",
+    "*.tsx": "${capture}.*.mts, ${capture}.*.tsx",
     ".gitattributes": ".gitignore",
     ".markdownlint.*": ".markdownlint-cli2.*",
     ".tool-versions": ".node-version, .nvmrc",

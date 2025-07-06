@@ -43,7 +43,9 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
-      - name: Build the project
+      - env:
+          BASE_PATH: /pnpm-workspace-template
+        name: Build the project
         run: pnpm run build
       - name: Check the code style
         run: pnpm run lint

@@ -37,7 +37,9 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
-      - name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
+      - env:
+          BASE_PATH: /pnpm-workspace-template
+        name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
         run: pnpm run build
       - env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -79,7 +81,9 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
-      - name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
+      - env:
+          BASE_PATH: /pnpm-workspace-template
+        name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
         run: pnpm run build
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -121,7 +125,9 @@ jobs:
           HUSKY: 0
         name: Install the dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
-      - name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
+      - env:
+          BASE_PATH: /pnpm-workspace-template
+        name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
         run: pnpm run build
       - name: pack the packages
         run: pnpm --filter "!*builder-config" -r pack

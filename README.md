@@ -61,6 +61,24 @@ corepack enable
 pnpm install
 ```
 
+#### Configure `BASE_PATH`
+
+Set up an `.env` file before building when deploying `packages/web-solid`
+to a subdirectory such as GitHub Pages.
+
+```sh
+cp .env.example .env
+# Edit .env and update BASE_PATH if needed
+```
+
+The default `.env.example` contains the following setting:
+
+```bash
+BASE_PATH=/pnpm-workspace-template
+```
+
+This value should match the subdirectory where the site is hosted.
+
 ### Building
 
 ```sh
