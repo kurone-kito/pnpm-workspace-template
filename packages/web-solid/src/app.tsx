@@ -1,5 +1,6 @@
 import helloWorld from '@kurone-kito/pwt-lib';
 import type { Component } from 'solid-js';
+import './app.css';
 
 /**
  * The main application component.

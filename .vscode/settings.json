@@ -16,6 +16,7 @@
     "vite.config.mts": "vitest.config.mts"
   },
   "files.associations": {
+    "*.css": "tailwindcss",
     "*.map": "json",
     ".imgbotconfig": "json",
     "LICENSE": "plaintext"
