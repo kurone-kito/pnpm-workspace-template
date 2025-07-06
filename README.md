@@ -99,7 +99,8 @@ pnpm run lint:fix # Lint and auto-fix
 Run `pnpm run build` before executing the test commands.
 
 ```sh
-pnpm run test
+pnpm run test  # Run unit tests
+pnpm run test:e2e  # Run end-to-end tests
 ```
 
 ### Cleaning
