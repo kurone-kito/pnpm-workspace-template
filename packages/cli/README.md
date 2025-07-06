@@ -2,6 +2,8 @@
 
 ## Features
 
+- [Single executable applications](https://nodejs.org/api/single-executable-applications.html)
+  building
 - [TypeScript](https://www.typescriptlang.org)
 - [Vite](https://vite.dev)
 - [Vitest](https://vitest.dev)
