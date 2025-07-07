@@ -1,2 +1,8 @@
 onlyBuiltDependencies:
   - '@biomejs/biome'
+  - '@parcel/watcher'
+  - '@tailwindcss/oxide'
+  - esbuild
+packages:
+  - packages/*
+shellEmulator: true

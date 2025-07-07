@@ -2,14 +2,22 @@
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
+    "*.d.mts": "${capture}.mjs, ${capture}.mjs.*, ${capture}.d.mts.*",
+    "*.js": "${capture}.js.*",
     "*.md": "${capture}.*.md",
+    "*.mjs": "${capture}.mjs.*",
+    "*.mts": "${capture}.*.mts, ${capture}.*.tsx",
+    "*.tsx": "${capture}.*.mts, ${capture}.*.tsx",
     ".gitattributes": ".gitignore",
     ".markdownlint.*": ".markdownlint-cli2.*",
     ".tool-versions": ".node-version, .nvmrc",
     "package.json": ".npmrc, pnpm-lock.yaml, pnpm-workspace.yaml",
-    "tsconfig.json": "*.tsbuildinfo"
+    "tsconfig.json": "*.tsbuildinfo, tsconfig.*.json",
+    "vite.config.mts": "vitest.config.mts"
   },
   "files.associations": {
+    "*.css": "tailwindcss",
+    "*.map": "json",
     ".imgbotconfig": "json",
     "LICENSE": "plaintext"
   },
