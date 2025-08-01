@@ -149,8 +149,8 @@ importers:
         specifier: ^0.20.0
         version: 0.20.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.44.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
       '@kurone-kito/vrc-icons-tw':
-        specifier: ^0.14.0
-        version: 0.14.0(tailwindcss@4.1.11)
+        specifier: ^0.14.1
+        version: 0.14.1(tailwindcss@4.1.11)
       '@playwright/test':
         specifier: ^1.53.2
         version: 1.53.2
@@ -1012,8 +1012,8 @@ packages:
     resolution: {integrity: sha512-shfz9nD7dpe7a/GcZfS6Ji3nG8TB8JV8geVM3lGcDRAqljBwa1IlVD0b3iGnpRvey6IQa4v1bEr84E9JQwXPpg==}
     engines: {node: ^20.11 || ^22 || >=24}
 
-  '@kurone-kito/vrc-icons-tw@0.14.0':
-    resolution: {integrity: sha512-Jx7fsxk6OC0BpmSYicKxyf0ZU8FWCoby9zf+xLgrB/mLz6uwKJBGWjkMQiljIiTV7+k4a8iu5jfnSHkn9P27Kg==}
+  '@kurone-kito/vrc-icons-tw@0.14.1':
+    resolution: {integrity: sha512-uO4owtopBWbXRMKmPQjRhe0PbA5qB4MKNJWPSPmQXw1A99FYd/fPWWDUxIEWHAl2StLO7OXUnCxYzg4nq9ycgA==}
     engines: {node: ^20.11 || >=22}
     peerDependencies:
       tailwindcss: '>=4.x.x'
@@ -6054,7 +6054,7 @@ snapshots:
       - typescript
       - yaml
 
-  '@kurone-kito/vrc-icons-tw@0.14.0(tailwindcss@4.1.11)':
+  '@kurone-kito/vrc-icons-tw@0.14.1(tailwindcss@4.1.11)':
     dependencies:
       tailwindcss: 4.1.11
 
