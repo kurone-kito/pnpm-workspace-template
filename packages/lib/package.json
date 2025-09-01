@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "description": "The boilerplate of the Node.js library",
-  "keywords": ["library", "boilerplate", "template"],
+  "keywords": [
+    "library",
+    "boilerplate",
+    "template"
+  ],
   "homepage": "https://github.com/kurone-kito/pnpm-workspace-template#readme",
   "bugs": "https://github.com/kurone-kito/pnpm-workspace-template/issues",
   "repository": {
@@ -16,7 +20,9 @@
   "type": "module",
   "exports": "./dist/index.mjs",
   "types": "./dist/index.d.mts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" coverage dist LICENSE node_modules/.cache",

@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "description": "The CLI app boilerplate",
-  "keywords": ["cli", "command-line", "boilerplate", "template"],
+  "keywords": [
+    "cli",
+    "command-line",
+    "boilerplate",
+    "template"
+  ],
   "homepage": "https://github.com/kurone-kito/pnpm-workspace-template#readme",
   "bugs": "https://github.com/kurone-kito/pnpm-workspace-template/issues",
   "repository": {
@@ -17,7 +22,9 @@
   "bin": {
     "pwt-cli": "./dist/index.mjs"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "build:sea": "sea-builder --targets=darwin-arm64,darwin-x64,linux-arm64,linux-x64,win-arm64,win-x64 pwt-cli",
@@ -35,8 +42,8 @@
     "@kurone-kito/pwt-lib": "workspace:^"
   },
   "devDependencies": {
-    "@kurone-kito/typescript-config": "^0.20.0",
     "@kurone-kito/sea-builder": "^0.20.0",
+    "@kurone-kito/typescript-config": "^0.20.0",
     "@kurone-kito/vite-lib-config": "^0.20.0",
     "@vitest/coverage-v8": "^3.2.4",
     "cpy-cli": "^5.0.0",

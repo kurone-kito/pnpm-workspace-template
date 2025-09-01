@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "description": "The SolidJS web app boilerplate",
-  "keywords": ["web", "solid.js", "boilerplate", "template"],
+  "keywords": [
+    "web",
+    "solid.js",
+    "boilerplate",
+    "template"
+  ],
   "homepage": "https://github.com/kurone-kito/pnpm-workspace-template#readme",
   "bugs": "https://github.com/kurone-kito/pnpm-workspace-template/issues",
   "repository": {
@@ -14,7 +19,10 @@
   "license": "MIT",
   "author": "kurone-kito <krone@kit.black> (https://kit.black/)",
   "type": "module",
-  "files": [".output", ".vinxi"],
+  "files": [
+    ".output",
+    ".vinxi"
+  ],
   "scripts": {
     "build": "vinxi build",
     "clean": "rimraf -g \"*.tgz\" \"*.tsbuildinfo\" .output .vinxi coverage LICENSE node_modules/.cache",

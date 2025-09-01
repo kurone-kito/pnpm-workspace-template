@@ -2,7 +2,7 @@
   "compilerOptions": {
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "lib": ["ES2023", "DOM"],
+    "lib": ["DOM", "ES2023"],
     "module": "es2022",
     "moduleResolution": "Bundler",
     "noEmit": true,

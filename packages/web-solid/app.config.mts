@@ -10,6 +10,6 @@ export default defineConfig({
     preset: 'githubPages',
     ...(baseURL ? { baseURL } : {}),
   },
-  // biome-ignore lint/complexity/noBannedTypes: <explanation>
-  vite: { plugins: [(tailwindcss as Function)()] },
+  // biome-ignore lint/suspicious/noExplicitAny: tailwindcss plugin type compatibility
+  vite: { plugins: [tailwindcss() as any[]] },
 });
