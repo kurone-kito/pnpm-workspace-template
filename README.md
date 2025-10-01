@@ -43,13 +43,14 @@ When you want to create a non-monorepo project, you should use the
 ## System Requirements
 
 - Node.js: Any of the following versions
-  - Iron LTS (`^20.11.x`)
+  - Iron LTS (`^20.18.x`)
   - Jod LTS (`^22.x.x`)
-  - Latest (`>=24.x.x`)
+  - Krypton LTS (`^24.x.x`)
+  - Latest (`>=25.x.x`)
 
 Note that this template includes `.node-version`, `.nvmrc`, and
 `.tool-versions` files with specific Node.js versions. These files
-currently list `20.19.3`, so update them and this section as needed when
+currently list `20.20.2`, so update them and this section as needed when
 you start a new project.
 
 ## Development
@@ -114,6 +115,6 @@ pnpm run clean
 Welcome to contribute to this repository! For more details,
 please refer to [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
-## LICENSE
+## License
 
 [MIT](./LICENSE)
