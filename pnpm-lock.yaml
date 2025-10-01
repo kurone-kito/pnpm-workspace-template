@@ -31,6 +31,9 @@ importers:
       '@kurone-kito/cspell-config':
         specifier: ^0.23.0-alpha.1
         version: 0.23.0-alpha.1(cspell@9.7.0)
+      '@kurone-kito/is-prerelease':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@kurone-kito/lint-staged-config':
         specifier: ^0.23.0-alpha.1
         version: 0.23.0-alpha.1(cspell@9.7.0)(lint-staged@16.4.0)
@@ -998,6 +1001,11 @@ packages:
       cspell:
         optional: true
 
+  '@kurone-kito/is-prerelease@0.1.0':
+    resolution: {integrity: sha512-+borQVaj0WocBjGrhGjFjqNlSLxvbyOJ808mtIRZa4K8fe9eVLU1YF43qUIzCi6WtyF4z5jtHaAXiwtgJ8tQfg==}
+    engines: {node: ^20.11 || ^22 || >=24}
+    hasBin: true
+
   '@kurone-kito/lint-staged-config@0.23.0-alpha.1':
     resolution: {integrity: sha512-cbhWs40pak7yiciVsocbi74g8PU0/agnRw0tYyvmUfGOQ9Rx7XxJh8z9zN6nCkfX6rnuznEoF2eLFtlkgZPtSg==}
     engines: {node: ^20.18 || ^22 || >=24}
@@ -1042,6 +1050,14 @@ packages:
     engines: {node: ^20.11 || >=22}
     peerDependencies:
       tailwindcss: '>=4.x.x'
+
+  '@kurone-kito/web-toybox-node@0.1.0-alpha.11':
+    resolution: {integrity: sha512-YihUvTaHCLwgOFmH9Sa9XzhZKuE0ZlblK0l9RsJ5/tAY32jr5HzmFY1VaN8YLuFEFLrbkUXdOXXmVNaYikG4Ig==}
+    engines: {node: ^20.11 || ^22 || >=24}
+
+  '@kurone-kito/web-toybox@0.1.0-alpha.11':
+    resolution: {integrity: sha512-OV6sgclo8lZ2eGGHiCNHeFDL2XIMQYRzQcYEsdrL3yab2mjin4HuqKxpXWPxUQOc6zn1GIksU/8pcppvTMqosg==}
+    engines: {node: ^20.11 || ^22 || >=24}
 
   '@mapbox/node-pre-gyp@2.0.0':
     resolution: {integrity: sha512-llMXd39jtP0HpQLVI37Bf1m2ADlEb35GYSh1SDSLsBhR+5iCxiNGlT31yqbNtVHygHAtMy6dWFERpU2JgufhPg==}
@@ -2773,9 +2789,6 @@ packages:
   cssstyle@4.6.0:
     resolution: {integrity: sha512-2z+rWdzbbSZv6/rhtvzvqeZQHrBaqgogqt85sqFNbabZOuFbCVFb8kPeEtZjiKkbrm395irpNKiYeFeLiQnFPg==}
     engines: {node: '>=18'}
-
-  csstype@3.1.3:
-    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
 
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
@@ -5025,6 +5038,10 @@ packages:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
     engines: {node: '>=18'}
 
+  tagged-tag@1.0.0:
+    resolution: {integrity: sha512-yEFYrVhod+hdNyx7g5Bnkkb0G6si8HJurOoOEgC8B/O0uXLHlaey/65KRv6cuWBNhBgHKAROVpc7QyYqE5gFng==}
+    engines: {node: '>=20'}
+
   tailwindcss-safe-area@0.6.0:
     resolution: {integrity: sha512-5PM3CKquzmaa6mow64zWJ0438/yGSqdPfjaXtwNDb31LezNWqFoGPSbvrW12T8iB4EBjeWot+qAA9nbUqqf3sw==}
     engines: {node: '>=16'}
@@ -5155,6 +5172,10 @@ packages:
   type-fest@4.41.0:
     resolution: {integrity: sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==}
     engines: {node: '>=16'}
+
+  type-fest@5.3.1:
+    resolution: {integrity: sha512-VCn+LMHbd4t6sF3wfU/+HKT63C9OoyrSIf4b+vtWHpt2U7/4InZG467YDNMFMR70DdHjAdpPWmw2lzRdg0Xqqg==}
+    engines: {node: '>=20'}
 
   typescript@5.8.2:
     resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
@@ -6500,6 +6521,12 @@ snapshots:
     optionalDependencies:
       cspell: 9.7.0
 
+  '@kurone-kito/is-prerelease@0.1.0':
+    dependencies:
+      '@kurone-kito/web-toybox-node': 0.1.0-alpha.11
+      '@types/semver': 7.7.1
+      semver: 7.7.4
+
   '@kurone-kito/lint-staged-config@0.23.0-alpha.1(cspell@9.7.0)(lint-staged@16.4.0)':
     optionalDependencies:
       cspell: 9.7.0
@@ -6549,6 +6576,14 @@ snapshots:
   '@kurone-kito/vrc-icons-tw@0.14.0(tailwindcss@4.1.11)':
     dependencies:
       tailwindcss: 4.1.11
+
+  '@kurone-kito/web-toybox-node@0.1.0-alpha.11':
+    dependencies:
+      '@kurone-kito/web-toybox': 0.1.0-alpha.11
+
+  '@kurone-kito/web-toybox@0.1.0-alpha.11':
+    dependencies:
+      type-fest: 5.3.1
 
   '@mapbox/node-pre-gyp@2.0.0':
     dependencies:
@@ -8567,8 +8602,6 @@ snapshots:
     dependencies:
       '@asamuzakjp/css-color': 3.2.0
       rrweb-cssom: 0.8.0
-
-  csstype@3.1.3: {}
 
   csstype@3.2.3: {}
 
@@ -10849,7 +10882,7 @@ snapshots:
 
   solid-js@1.9.7:
     dependencies:
-      csstype: 3.1.3
+      csstype: 3.2.3
       seroval: 1.3.2
       seroval-plugins: 1.3.2(seroval@1.3.2)
 
@@ -10994,6 +11027,8 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
+  tagged-tag@1.0.0: {}
+
   tailwindcss-safe-area@0.6.0(tailwindcss@4.1.11):
     dependencies:
       tailwindcss: 4.1.11
@@ -11105,6 +11140,10 @@ snapshots:
   tslib@2.8.1: {}
 
   type-fest@4.41.0: {}
+
+  type-fest@5.3.1:
+    dependencies:
+      tagged-tag: 1.0.0
 
   typescript@5.8.2: {}
 
