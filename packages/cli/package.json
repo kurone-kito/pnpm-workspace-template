@@ -39,7 +39,8 @@
     "test:vitest": "vitest run --coverage"
   },
   "dependencies": {
-    "@kurone-kito/pwt-lib": "workspace:^"
+    "@kurone-kito/pwt-lib": "workspace:^",
+    "@kurone-kito/web-toybox-node": "0.1.0-alpha.11"
   },
   "devDependencies": {
     "@kurone-kito/sea-builder": "^0.20.0",
