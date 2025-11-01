@@ -23,13 +23,13 @@ jobs:
       - name: Stages the pushed branch
         uses: actions/checkout@v4
       - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
       - name: Enable the corepack
         run: corepack enable
       - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: pnpm
           node-version-file: .node-version
@@ -67,13 +67,13 @@ jobs:
       - name: Stages the pushed branch
         uses: actions/checkout@v4
       - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
       - name: Enable the corepack
         run: corepack enable
       - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: pnpm
           node-version-file: .node-version
@@ -111,13 +111,13 @@ jobs:
       - name: Stages the pushed branch
         uses: actions/checkout@v4
       - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
       - name: Enable the corepack
         run: corepack enable
       - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: pnpm
           node-version-file: .node-version
@@ -146,13 +146,13 @@ jobs:
       - name: Stages the pushed branch
         uses: actions/checkout@v4
       - name: Pre-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version-file: .node-version
       - name: Enable the corepack
         run: corepack enable
       - name: Post-prepare the Node.js environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           cache: pnpm
           node-version-file: .node-version
