@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "checkJs": false,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "lib": ["DOM", "ES2023"],
@@ -11,5 +12,5 @@
   },
   "exclude": [".output", ".vinxi", "coverage", "node_modules"],
   "extends": "@kurone-kito/typescript-config",
-  "include": ["./**/*.mjs", "./**/*.mts", "./**/*.tsx"]
+  "include": ["src/**/*.tsx", "*.config.mts"]
 }
