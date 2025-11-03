@@ -18,5 +18,6 @@ words:
   - libxshmfence
   - libxkbcommon
   - libpangocairo
+  - solidjs
   - vinxi
   - xsea
