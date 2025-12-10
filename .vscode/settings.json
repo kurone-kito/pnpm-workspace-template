@@ -29,19 +29,28 @@
   },
   "files.watcherExclude": {
     "**/*.tgz": true,
+    "**/*.tsbuildinfo": true,
     "**/.git/objects/**": true,
     "**/.git/subtree-cache/**": true,
     "**/.husky/_/**": true,
+    "**/.output/**": true,
+    "**/.vinxi/**": true,
+    "**/coverage/**": true,
+    "**/dist/**": true,
     "**/node_modules/**": true,
-    "**/pnpm-lock.yaml.*": true
+    "**/pnpm-lock.yaml.*": true,
+    "**/test-results/**": true
   },
   "git.branchProtection": ["main"],
   "js/ts.tsdk.promptToUseWorkspaceVersion": true,
   "material-icon-theme.files.associations": {
+    "*.map": "javascript-map",
     ".imgbotconfig": "robots"
   },
   "material-icon-theme.folders.associations": {
-    ".vim": "command"
+    ".vim": "command",
+    "test-results": "coverage",
+    "web-solid": "public"
   },
   "search.exclude": {
     "**/node_modules/**/*": true
