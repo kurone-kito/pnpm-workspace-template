@@ -127,7 +127,7 @@ jobs:
         name: Build the project explicitly. The workaround is provisional because the publish command does not perform topological sorting.
         run: pnpm run build
       - name: pack the packages
-        run: pnpm --filter "!*builder-config" -r pack
+        run: pnpm --filter "!*pnpm-workspace-template" -r pack
       - name: Uploading assets to the release
         uses: softprops/action-gh-release@v2
         with:
