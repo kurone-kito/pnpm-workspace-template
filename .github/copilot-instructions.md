@@ -1,6 +1,6 @@
 # Guidelines for AI Agents
 
-This project is a generic Node.js project template using pnpm.
+This project is a generic Node.js workspace template using pnpm.
 
 - Please write comments in English.
 - Use the `pnpm run lint:fix` command to ensure code style quality.
@@ -9,6 +9,15 @@ This project is a generic Node.js project template using pnpm.
   least one recommended solution. If in Plan mode, resolve all these points
   before starting implementation.
 
+## Packages
+
+| path                  | package name                           | description                                        |
+| --------------------- | -------------------------------------- | -------------------------------------------------- |
+| `/`                   | `@kurone-kito/pnpm-workspace-template` | Manage the monorepo workspace and linting.         |
+| `/packages/cli`       | `@kurone-kito/pwt-cli`                 | A boilerplate for CLI applications.                |
+| `/packages/lib`       | `@kurone-kito/pwt-lib`                 | A boilerplate for libraries.                       |
+| `/packages/web-solid` | `@kurone-kito/pwt-web-solid`           | A boilerplate for web applications using Solid.js. |
+
 ## Development
 
 ### Install the dependencies
@@ -16,6 +25,18 @@ This project is a generic Node.js project template using pnpm.
 ```sh
 corepack enable
 pnpm install
+```
+
+### Building
+
+```sh
+pnpm run build
+
+# if you want to watch file changes
+pnpm run dev
+
+# to build a specific package
+pnpm -F '@kurone-kito/pwt-lib' run build
 ```
 
 ### Linting
@@ -30,9 +51,6 @@ pnpm run lint:fix # Lint and auto-fix
 ```sh
 pnpm run test
 ```
-
-Currently, the command works as an alias for the `pnpm run lint` command.
-Set up your own testing framework and replace this script as needed.
 
 ### Cleaning
 
