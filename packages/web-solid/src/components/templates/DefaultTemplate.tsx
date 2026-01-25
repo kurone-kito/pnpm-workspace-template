@@ -1,4 +1,4 @@
-import { MetaProvider } from '@solidjs/meta';
+import { MetaProvider } from '@kurone-kito/web-toybox-solid';
 import type { RouteSectionProps } from '@solidjs/router';
 import type { Component } from 'solid-js';
 import { Suspense } from 'solid-js';

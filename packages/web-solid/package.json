@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@kurone-kito/pwt-lib": "workspace:^",
+    "@kurone-kito/web-toybox-solid": "^0.1.0-alpha.11",
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.15.3",
     "@solidjs/start": "^1.1.6",
