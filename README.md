@@ -8,9 +8,12 @@
 
 ### Workspaces
 
-- `cli`: The boilerplate of the CLI applications
-- `lib`: The boilerplate of the libraries
-- `web-solid`: The boilerplate of the web applications using Solid.js
+| path                  | package name                           | description                                        |
+| --------------------- | -------------------------------------- | -------------------------------------------------- |
+| `/`                   | `@kurone-kito/pnpm-workspace-template` | Manage the monorepo workspace and linting.         |
+| `/packages/cli`       | `@kurone-kito/pwt-cli`                 | A boilerplate for CLI applications.                |
+| `/packages/lib`       | `@kurone-kito/pwt-lib`                 | A boilerplate for libraries.                       |
+| `/packages/web-solid` | `@kurone-kito/pwt-web-solid`           | A boilerplate for web applications using Solid.js. |
 
 ## How to use this template
 
