@@ -47,7 +47,7 @@
     "cpy-cli": "^5.0.0",
     "daisyui": "^5.0.43",
     "jsdom": "^26.1.0",
-    "rimraf": "^6.0.1",
+    "rimraf": "^6.1.2",
     "tailwindcss": "^4.1.11",
     "tailwindcss-safe-area": "^0.6.0",
     "type-fest": "^4.41.0",
