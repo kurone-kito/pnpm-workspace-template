@@ -38,7 +38,7 @@
     "@kurone-kito/typescript-config": "^0.20.0",
     "@kurone-kito/vite-lib-config": "^0.20.0",
     "@kurone-kito/vrc-icons-tw": "^0.14.0",
-    "@playwright/test": "^1.53.2",
+    "@playwright/test": "^1.58.1",
     "@solidjs/testing-library": "^0.8.10",
     "@tailwindcss/vite": "^4.1.11",
     "@testing-library/jest-dom": "^6.6.3",
