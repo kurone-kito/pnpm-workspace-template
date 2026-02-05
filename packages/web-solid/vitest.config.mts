@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [solidPlugin()],
   ssr: { noExternal: [/@solidjs\//, 'solid-js'] },
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     include: ['src/**/*.spec.{ts,tsx,mts}'],
     server: { deps: { inline: [/@solidjs\/start/] } },
   },
