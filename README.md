@@ -2,6 +2,12 @@
 
 ## Features
 
+- AI agent guidance with a Copilot-first compatibility layout
+  ([GitHub Copilot canonical guide](.github/copilot-instructions.md),
+  [per-package scoped instructions](.github/instructions/),
+  [OpenAI Codex adapter](AGENTS.md),
+  [Claude Code adapter](CLAUDE.md),
+  [strategy notes](docs/ai-strategy.md))
 - All features of
   [kurone-kito/pnpm-project-template](https://github.com/kurone-kito/pnpm-project-template)
 - The workspaces support with [pnpm workspaces](https://pnpm.io/workspaces)
@@ -37,6 +43,10 @@ pnpm install
   - `repository`: The repository URL for your project.
   - `bugs`: The URL for reporting issues.
 - Edit or remove `.github/CODEOWNERS` as needed.
+- Review `docs/ai-strategy.md`, then update `AGENTS.md`,
+  `CLAUDE.md`, `.github/copilot-instructions.md`, and
+  `.github/instructions/*.instructions.md` to reflect your
+  project specifics and preferred tooling order.
 
 ### Usecase
 
