@@ -6,6 +6,15 @@ It is currently optimized for GitHub Copilot tooling, but `CLAUDE.md`
 exists so Claude Code can still receive the minimum project rules
 immediately, without depending on a redirect.
 
+## Setup commands
+
+- Install dependencies: `corepack enable && pnpm install`
+- Build all packages: `pnpm run build`
+- Lint: `pnpm run lint`
+- Lint and auto-fix: `pnpm run lint:fix`
+- Test: `pnpm run test`
+- Clean: `pnpm run clean`
+
 ## Immediate rules
 
 - Match the conversational language to the user's language.
@@ -19,6 +28,16 @@ immediately, without depending on a redirect.
   project's Conventional Commits rules and keep each commit atomic.
 - Do not modify community documents (`CODE_OF_CONDUCT*`,
   `CONTRIBUTING*`) without explicit approval.
+
+## Boundaries
+
+- **Always do**: run lint:fix, follow Conventional Commits, use LF
+  line endings, keep commits atomic, write docs in English
+- **Ask first**: adding/removing dependencies, changing architecture,
+  modifying CI workflows, altering `@kurone-kito/*-config` packages
+- **Never do**: commit secrets or credentials, modify community
+  documents without approval, disable linter rules without
+  justification, skip review of AI-generated code
 
 ## Project standards
 
@@ -47,8 +66,25 @@ Use workspace-scoped commands when targeting a specific package:
 
 This project follows
 [Conventional Commits](https://www.conventionalcommits.org/).
+A `.gitmessage` template is available at the repository root.
 Write user-facing, lowercase subjects, keep them under 72 characters,
 and split unrelated changes into separate atomic commits.
+
+## Onboarding detection
+
+When starting a session, check whether this repository is the base
+template or a derived project:
+
+- If the repository name is exactly `pnpm-workspace-template`, it is
+  the base template — no action needed.
+- If the name differs **and** this file still contains the phrase
+  `pnpm monorepo workspace template`, the guidelines have not been
+  customized yet.
+
+In that case, **proactively propose an onboarding workflow** to
+customize the project's documentation, tooling, and AI guidelines.
+See the full onboarding checklist in
+[.github/copilot-instructions.md](.github/copilot-instructions.md).
 
 ## Canonical reference
 
