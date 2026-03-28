@@ -2,7 +2,6 @@
 
 This project is a pnpm monorepo workspace template containing three
 sample packages: a CLI application, a library, and a web application.
-
 When contributing to this repository using AI agents, adhere to the
 following guidelines to ensure high-quality contributions that align
 with the project's standards and practices:
@@ -42,10 +41,41 @@ Copilot when working in the corresponding package directory.
   makes the next step unsafe. When that pause is needed, provide one
   or more recommended response options.
 
+## Boundaries
+
+### Always do
+
+- Run `pnpm run lint:fix` after every change, then verify with
+  `pnpm run lint`
+- Follow Conventional Commits for all commits
+- Use LF line endings, 2-space indentation, and a final newline
+- Keep commits atomic — one logical change per commit
+- Write comments and documentation in English
+
+### Ask first
+
+- Adding or removing dependencies
+- Changing the project architecture or directory structure
+- Modifying CI/CD workflows (`.github/workflows/`)
+- Altering shared configuration packages (`@kurone-kito/*-config`)
+- Making changes that affect all workspace packages
+
+### Never do
+
+- Commit secrets, credentials, API keys, or tokens into source code
+- Modify community documents (`CODE_OF_CONDUCT*`, `CONTRIBUTING*`)
+  without explicit approval
+- Disable or bypass linter rules without justification
+- Accept AI-generated code without reviewing it for correctness
+  and security
+- Introduce breaking changes without a `BREAKING CHANGE` footer
+
 ## Commit rules
 
 This project follows
 [Conventional Commits](https://www.conventionalcommits.org/).
+A `.gitmessage` template is available at the repository root for
+guidance when writing commit messages.
 
 ### Format
 
@@ -260,6 +290,24 @@ pnpm run clean
 - **Do not** modify community documents (CODE_OF_CONDUCT,
   CONTRIBUTING) without explicit approval
 
+## Security
+
+These rules follow the
+[OpenSSF Security-Focused Guide for AI Code Assistant Instructions](https://best.openssf.org/Security-Focused-Guide-for-AI-Code-Assistant-Instructions.html):
+
+- **No secrets in code** — store credentials in environment variables
+  or a secrets manager; never hard-code them
+- **Treat AI output as untrusted** — review all generated code for
+  correctness, security vulnerabilities, and adherence to project
+  standards before committing
+- **Validate inputs** — ensure all external data is validated and
+  sanitized before use
+- **Verify dependencies** — confirm that any recommended packages are
+  reputable, actively maintained, and free of known vulnerabilities
+- **Recursive review** — when generating security-sensitive code, ask
+  the AI to review its own output and suggest improvements before
+  accepting
+
 ## Onboarding
 
 This project is a pnpm monorepo workspace template, a derivative of
@@ -271,17 +319,51 @@ For non-monorepo projects, use
 [pnpm-project-template](https://github.com/kurone-kito/pnpm-project-template)
 instead.
 
-### Derived project detection
+### Derived-repository detection
 
-If the repository name or `package.json` names no longer match the
-template defaults (`@kurone-kito/pnpm-workspace-template`,
-`@kurone-kito/pwt-*`), treat this as a **derived project**. Before
-starting the first task, suggest an onboarding checklist:
+When an AI agent starts a session, it should determine whether this
+repository is the **base template** or a **derived project**:
 
-1. Update package names, scopes, and descriptions in every
-   `package.json`
-2. Replace template-specific references in AI guideline files
-   (this file, `CLAUDE.md`, `AGENTS.md`, scoped instructions)
-3. Review and update `docs/ai-strategy.md` for project-specific
-   tooling decisions
-4. Update `README.md` with project-specific information
+1. **Check the repository name** — inspect the git remote URL
+   (e.g., `git remote get-url origin`), the working-directory name,
+   or any GitHub API context available to the agent. If the
+   repository name is exactly `pnpm-workspace-template`, treat it as
+   the base template. Any other name indicates a derived project.
+2. **Check for generic content** — look for the sentinel phrase
+   `pnpm monorepo workspace template` in this file or in the
+   repository's AI instruction files. Its presence means the
+   guidelines have **not yet been customized**.
+
+If both conditions are met — the repository is derived **and** the
+guidelines are still generic — the agent should **proactively
+propose an onboarding workflow** before proceeding with the user's
+request. The proposal should be conversational, brief, and
+non-blocking (the user may decline and continue normally).
+
+### Onboarding proposal
+
+When proposing onboarding, suggest customizing the following areas
+in a single plan:
+
+1. **Project description** — update `README.md` and the opening
+   lines of AI instruction files to reflect the project's purpose
+2. **Package configuration** — update package names, scopes, and
+   descriptions in every `package.json`
+3. **Framework / toolchain** — identify the primary framework;
+   add relevant build tooling and type definitions
+4. **Dependency management** — configure workspace structure and
+   lock-file conventions as needed
+5. **Testing strategy** — define the test runner, coverage targets,
+   and test-file conventions
+6. **CI/CD workflows** — adjust `.github/workflows/` to match the
+   project's build, test, and deploy pipeline
+7. **AI guideline specialization** — rewrite this file,
+   `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, and scoped instructions
+   in `.github/instructions/` to include project-specific rules,
+   coding patterns, and architecture notes
+8. **License review** — confirm or replace the MIT license if the
+   project requires a different one
+
+Present these items as a checklist proposal (e.g., in Plan mode for
+Copilot, or as a numbered list for other agents). Let the user
+select which items to tackle and in what order.
