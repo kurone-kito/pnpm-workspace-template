@@ -17,6 +17,8 @@ in this monorepo template.
   then point to the canonical Copilot guide for the remaining detail.
 - [CLAUDE.md](../CLAUDE.md) is a Claude Code compatibility entry point
   with the same role.
+- [GEMINI.md](../GEMINI.md) is a Gemini CLI compatibility entry point
+  with the same role.
 
 ## Change policy
 
@@ -40,6 +42,18 @@ in this monorepo template.
 - Ensure scoped files do not contradict the canonical guide — they
   should supplement, not override.
 
+## Onboarding detection
+
+When the repository name is not `pnpm-workspace-template` and the AI
+instruction files still contain the sentinel phrase `pnpm monorepo
+workspace template`, AI agents should proactively propose a
+customization workflow. This keeps the template's "vibe-coding ready"
+promise alive in derived projects by guiding users through
+documentation, tooling, and guideline specialization immediately
+after they create a new repository from the template. The full
+onboarding checklist is maintained in
+`.github/copilot-instructions.md` § Onboarding.
+
 ## Maintenance notes
 
 - Treat this file as a human-facing strategy note, not as the primary
@@ -49,4 +63,5 @@ in this monorepo template.
   - `.github/instructions/*.instructions.md`
   - `AGENTS.md`
   - `CLAUDE.md`
+  - `GEMINI.md`
   - `README.md` (AI guidance section)
