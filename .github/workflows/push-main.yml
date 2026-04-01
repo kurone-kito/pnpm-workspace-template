@@ -52,7 +52,7 @@ jobs:
         name: Run the build process
         run: pnpm run build
       - name: Prepare for GitHub Pages deployment
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
         with:
           enablement: true
       - name: Upload to GitHub Pages artifacts
