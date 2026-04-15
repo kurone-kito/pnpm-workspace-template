@@ -29,7 +29,7 @@
     "dev": "vinxi dev",
     "prebuild": "cpy --flat ../../LICENSE .",
     "prepack": "pnpm run clean && pnpm run build",
-    "prepare": "playwright install --with-deps",
+    "prepare": "playwright install",
     "test": "pnpm run \"/test:.+/\"",
     "test:e2e": "playwright test",
     "test:ts": "tsc -p tsconfig.test.json --noEmit",
