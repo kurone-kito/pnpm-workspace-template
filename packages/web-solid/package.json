@@ -35,7 +35,7 @@
     "solid-js": "^1.9.7"
   },
   "devDependencies": {
-    "@kurone-kito/typescript-config": "^0.20.0",
+    "@kurone-kito/typescript-config": "^0.21.0",
     "@kurone-kito/vite-lib-config": "^0.20.0",
     "@kurone-kito/vrc-icons-tw": "^0.14.0",
     "@playwright/test": "^1.53.2",
