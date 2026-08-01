@@ -48,7 +48,7 @@
     "daisyui": "^5.0.43",
     "jsdom": "^26.1.0",
     "rimraf": "^6.0.1",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.3.3",
     "tailwindcss-safe-area": "^0.6.0",
     "type-fest": "^4.41.0",
     "typescript": "~5.8.3",
