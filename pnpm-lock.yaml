@@ -150,7 +150,7 @@ importers:
         version: 0.20.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.62.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
       '@kurone-kito/vrc-icons-tw':
         specifier: ^0.14.0
-        version: 0.14.0(tailwindcss@4.1.11)
+        version: 0.14.0(tailwindcss@4.3.3)
       '@playwright/test':
         specifier: ^1.53.2
         version: 1.53.2
@@ -182,11 +182,11 @@ importers:
         specifier: ^6.0.1
         version: 6.0.1
       tailwindcss:
-        specifier: ^4.1.11
-        version: 4.1.11
+        specifier: ^4.3.3
+        version: 4.3.3
       tailwindcss-safe-area:
         specifier: ^0.6.0
-        version: 0.6.0(tailwindcss@4.1.11)
+        version: 0.6.0(tailwindcss@4.3.3)
       type-fest:
         specifier: ^4.41.0
         version: 4.41.0
@@ -4848,6 +4848,9 @@ packages:
   tailwindcss@4.1.11:
     resolution: {integrity: sha512-2E9TBm6MDD/xKYe+dvJZAmg3yxIEDNRc0jwlNyDg/4Fil2QcSLjFKGVff0lAf1jjeaArlG/M75Ey/EYr/OJtBA==}
 
+  tailwindcss@4.3.3:
+    resolution: {integrity: sha512-gOhV3P7ufE62QDGg1zVaTgCR+EtPv92k2nIhVcVKcLmxT1sUBsQGhnZj175j+MqRt4zLF7ic+sCYjfhxMxj7YQ==}
+
   tapable@2.2.2:
     resolution: {integrity: sha512-Re10+NauLTMCudc7T5WLFLAwDhQ0JWdrMK+9B2M8zR5hRExKmsRDCBA7/aV/pNJFltmBFO5BAMlQFi/vq3nKOg==}
     engines: {node: '>=6'}
@@ -6356,9 +6359,9 @@ snapshots:
       - typescript
       - yaml
 
-  '@kurone-kito/vrc-icons-tw@0.14.0(tailwindcss@4.1.11)':
+  '@kurone-kito/vrc-icons-tw@0.14.0(tailwindcss@4.3.3)':
     dependencies:
-      tailwindcss: 4.1.11
+      tailwindcss: 4.3.3
 
   '@mapbox/node-pre-gyp@2.0.0':
     dependencies:
@@ -10400,11 +10403,13 @@ snapshots:
 
   system-architecture@0.1.0: {}
 
-  tailwindcss-safe-area@0.6.0(tailwindcss@4.1.11):
+  tailwindcss-safe-area@0.6.0(tailwindcss@4.3.3):
     dependencies:
-      tailwindcss: 4.1.11
+      tailwindcss: 4.3.3
 
   tailwindcss@4.1.11: {}
+
+  tailwindcss@4.3.3: {}
 
   tapable@2.2.2: {}
 
