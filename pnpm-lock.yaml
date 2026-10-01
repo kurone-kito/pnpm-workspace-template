@@ -73,8 +73,8 @@ importers:
         specifier: ^0.20.0
         version: 0.20.0(xsea@0.1.0)
       '@kurone-kito/typescript-config':
-        specifier: ^0.20.0
-        version: 0.20.0(typescript@5.8.3)
+        specifier: ^0.22.0
+        version: 0.22.0(typescript@5.8.3)
       '@kurone-kito/vite-lib-config':
         specifier: ^0.20.0
         version: 0.20.0(@types/node@24.0.10)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
@@ -103,8 +103,8 @@ importers:
   packages/lib:
     devDependencies:
       '@kurone-kito/typescript-config':
-        specifier: ^0.20.0
-        version: 0.20.0(typescript@5.8.3)
+        specifier: ^0.22.0
+        version: 0.22.0(typescript@5.8.3)
       '@kurone-kito/vite-lib-config':
         specifier: ^0.20.0
         version: 0.20.0(@types/node@24.0.10)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
@@ -143,8 +143,8 @@ importers:
         version: 1.9.14
     devDependencies:
       '@kurone-kito/typescript-config':
-        specifier: ^0.20.0
-        version: 0.20.0(typescript@5.8.3)
+        specifier: ^0.22.0
+        version: 0.22.0(typescript@5.8.3)
       '@kurone-kito/vite-lib-config':
         specifier: ^0.20.0
         version: 0.20.0(@types/node@24.0.10)(jiti@2.7.0)(lightningcss@1.32.0)(rollup@4.62.2)(terser@5.43.1)(typescript@5.8.3)(yaml@2.8.0)
@@ -1170,11 +1170,11 @@ packages:
       xsea:
         optional: true
 
-  '@kurone-kito/typescript-config@0.20.0':
-    resolution: {integrity: sha512-i36Ch1P8FntbzOTZTJQ3IGGIjokcqm3TwwFIYnJMxRuH+iD5IJWoNG46xFOsMlQyc8IOmWTqN+rXbF1l93MZiQ==}
-    engines: {node: ^20.11 || ^22 || >=24}
+  '@kurone-kito/typescript-config@0.22.0':
+    resolution: {integrity: sha512-UR101c8XGdYUfJT0m4R7GBiBH8y2vVtKb614yptBNFvprUEl84zP17it3vfBl+1LseUfmR2uUCBEhxq3NTJR5A==}
+    engines: {node: ^22.23.2 || ^24.2.0 || >=26.0.0}
     peerDependencies:
-      typescript: '>=5.7.x'
+      typescript: '>=7.0.0'
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -6381,7 +6381,7 @@ snapshots:
     optionalDependencies:
       xsea: 0.1.0
 
-  '@kurone-kito/typescript-config@0.20.0(typescript@5.8.3)':
+  '@kurone-kito/typescript-config@0.22.0(typescript@5.8.3)':
     optionalDependencies:
       typescript: 5.8.3
 
